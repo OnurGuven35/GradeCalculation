@@ -11,7 +11,7 @@ public class gradeCalc {
         int mat, fzk, kmy, trkc, trh, mzk;
         double ort;
 
-        // İlk olarak notlarımızı girmemiz lazım.
+        // İlk olarak kullanıcıdan notları almamız lazım.
 
         System.out.println();
         System.out.print("Matematik Notunuzu Giriniz : ");
