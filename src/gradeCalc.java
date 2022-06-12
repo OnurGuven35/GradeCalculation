@@ -6,10 +6,10 @@ import java.util.Scanner;
 
 public class gradeCalc {
     public static void main(String[] args) {
+        Scanner grade = new Scanner(System.in);
 
         int mat, fzk, kmy, trkc, trh, mzk;
         double ort;
-        Scanner grade = new Scanner(System.in);
 
         // İlk olarak notlarımızı girmemiz lazım.
 
