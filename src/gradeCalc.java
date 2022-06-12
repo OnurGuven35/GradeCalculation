@@ -1,10 +1,17 @@
+/* Aynı program içerisinde koşullu ifadeler kullanılarak, eğer kullanıcının ortalaması 60'dan büyük ise ekrana "Sınıfı Geçti" , küçük ise "Sınıfta Kaldı" yazsın.
+
+Not : If ve Else kullanılmayacak... */
+
 import java.util.Scanner;
+
 public class gradeCalc {
     public static void main(String[] args) {
 
-        int mat,fzk,kmy,trkc,trh,mzk;
+        int mat, fzk, kmy, trkc, trh, mzk;
         double ort;
         Scanner grade = new Scanner(System.in);
+
+        // İlk olarak notlarımızı girmemiz lazım.
 
         System.out.println();
         System.out.print("Matematik Notunuzu Giriniz : ");
@@ -20,9 +27,13 @@ public class gradeCalc {
         System.out.print("Muzik Notunuzu Giriniz : ");
         mzk = grade.nextInt();
 
-        ort = ((mat+fzk+kmy+trkc+trh+mzk)/6.0);
+        // Daha sonra notlarımızın ortalamasını ekrana yazdırıyoruz.
+
+        ort = ((mat + fzk + kmy + trkc + trh + mzk) / 6.0);
         System.out.println();
-        System.out.println("Ortalamaniz : "+ ort);
+        System.out.println("Ortalamaniz : " + ort);
+
+        // Son olarak ortalamaya göre sınıf geçip kalma durumunu kontrol ediyoruz.
 
         boolean kosul = ort >= 60;
         String durum = kosul ? "Sinifi Gectiniz Tebrikler :) " : "Sinifta Kaldiniz Uzgunuz :( ";
